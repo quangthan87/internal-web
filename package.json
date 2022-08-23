@@ -1,0 +1,14 @@
+{
+  "name": "internal_web_rebuild",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "install-dependencies": "npm install && cd api && npm install && cd ../client && npm install",
+    "build": "cd api && npm run build && cd ../client && npm run build",
+    "both": "cd api && npm run start && cd ../client && npm run start",
+    "start:production": "cd api && npm run start:production && cd ../client && npm run start:production"
+  }
+}
